@@ -4,13 +4,14 @@
       <div class="flex px-2 py-2 space-x-6">
         <div class="text-3xl text-white">{{$static.metadata.siteName}}</div>
       </div>
-      <div class="flex px-2 py-2 space-x-6">
-        <a
+      <div class="flex px-2 py-2 space-x-6 items-center">
+        <g-link
           class="text-gray-500 font-bold hover:text-sora"
+          exact-active-class="text-sora"
           v-for="(item) in $static.metadata.nav"
-          :href="item.link"
+          :to="item.link"
           :key="item.text"
-        >{{item.text}}</a>
+        >{{item.text}}</g-link>
       </div>
     </div>
     <div class="flex flex-col items-center container mx-auto mt-10">
@@ -25,14 +26,13 @@
         />
       </div>
       <div class="space-x-5 text-3xl">
-        <a
+        <g-link :to="item.link"
           v-for="(item) in $static.metadata.externalLink"
-          :href="item.link"
           :key="item.icon"
           target="_blank"
         >
           <i :class="[item.icon,'text-white', 'hover:text-sora']"></i>
-        </a>
+        </g-link>
       </div>
       <div class="text-white text-5xl">{{$static.metadata.me.name}}</div>
       <div class="text-white text-base">{{$static.metadata.me.description}}</div>

@@ -1,8 +1,8 @@
 <template>
   <div class="container mx-auto px-4 py-12">
     <div class="mb-5" v-for="(item, index) in $static.post.edges" :key="index">
-      <div class="text-5xl font-bold hover:text-sora">
-        <a :href="item.node.path">{{item.node.title}}</a>
+      <div class="text-5xl font-bold">
+        <g-link class="hover:text-sora" :to="item.node.path">{{item.node.title}}</g-link>
       </div>
       <div class="text-base text-gray-500 mb-2">发表于 {{item.node.date}}</div>
       <div class="flex text-base space-x-2 mb-5">

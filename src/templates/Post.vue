@@ -5,3 +5,11 @@
     </div>
   </Layout>
 </template>
+
+<script>
+export default {
+  metaInfo: {
+    title: "Post",
+  },
+};
+</script>

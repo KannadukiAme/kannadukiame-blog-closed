@@ -22,7 +22,7 @@ module.exports = {
     },
     nav: [
       { text: 'HOME', link: '/' },
-      { text: 'ANIME', link: '/anime/' }
+      { text: 'BLOG', link: '/blog/' }
     ],
     externalLink: [
       {

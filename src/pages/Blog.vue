@@ -9,7 +9,7 @@ import Articles from "../components/Articles";
 
 export default {
   metaInfo: {
-    title: "Anime",
+    title: "Blog",
   },
   components: {
     Articles,
