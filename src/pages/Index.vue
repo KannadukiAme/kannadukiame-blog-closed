@@ -1,5 +1,5 @@
 <template>
-  <Layout>
+  <Layout class="layout grid grid-rows-layout">
     <Home />
   </Layout>
 </template>

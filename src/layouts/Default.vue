@@ -1,5 +1,5 @@
 <template>
-  <div class="layout grid grid-rows-layout">
+  <div>
     <Header />
     <slot />
     <Footer />
