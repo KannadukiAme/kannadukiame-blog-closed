@@ -7,13 +7,17 @@ module.exports = {
     './src/**/*.jsx',
   ],
   theme: {
+    fontFamily: {
+      'sans': 'Helvetica, Tahoma, Arial, STXihei, "华文细黑", "Microsoft YaHei", "微软雅黑", SimSun, "宋体", Heiti, "黑体", sans- serif'
+    },
     extend: {
       colors: {
         'sora': '#66ccff',
       },
       gridTemplateRows: {
-        'layout': '400px minmax(300px, 1fr) 120px'
-      }
+        'layout': '60px minmax(300px, 1fr) 120px',
+        'post-layout': '60px minmax(340px, calc(100vh - 100px)) minmax(300px, 1fr) 120px'
+      },
     },
   },
   variants: {},
