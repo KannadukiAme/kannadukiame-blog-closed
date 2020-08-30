@@ -1,5 +1,5 @@
 {
-  "name": "gridsome-blog",
+  "name": "kannadukiame-blog",
   "private": true,
   "scripts": {
     "build": "gridsome build",
