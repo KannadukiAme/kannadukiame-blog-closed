@@ -33,8 +33,21 @@ module.exports = {
           backgroundColor: '#1a202c',
           borderColor: '#fff',
           color: '#fff',
+          cursor: 'pointer'
         }
-      }
+      },
+      '.tag--white': {
+        // backgroundColor: '#fff',
+        borderWidth: '1px',
+        borderColor: 'white',
+        padding: '0.25rem 1rem 0.25rem 1rem',
+        color: 'white',
+        '&:hover': {
+          borderColor: '#66ccff',
+          color: '#66ccff',
+          cursor: 'pointer'
+        }
+      },
     }
 
     addComponents(tags)

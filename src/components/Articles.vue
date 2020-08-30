@@ -6,7 +6,7 @@
       </div>
       <div class="text-base text-gray-500 mb-2">发表于 {{item.node.date}}</div>
       <div class="flex text-base space-x-2 mb-5">
-        <div class="tag" v-for="(tag, index) in item.node.tags" :key="index">{{tag}}</div>
+        <a class="tag" v-for="(tag, index) in item.node.tags" :key="index" href="#">{{tag}}</a>
       </div>
       <div>{{item.node.description}}</div>
     </div>
