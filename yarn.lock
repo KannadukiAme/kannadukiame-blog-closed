@@ -4386,6 +4386,13 @@ gray-matter@^4.0.2:
     section-matter "^1.0.0"
     strip-bom-string "^1.0.0"
 
+gridsome-plugin-nprogress@^0.0.7:
+  version "0.0.7"
+  resolved "https://registry.yarnpkg.com/gridsome-plugin-nprogress/-/gridsome-plugin-nprogress-0.0.7.tgz#70619823abf5f7e91ef308dfb3a667428d5378f7"
+  integrity sha512-XRGC0X9CEFI4BFqGDcG6onZqQruD5G9RKTEnsZALrrFMGfZYLaCS/Q7AK/oc36PcE+Q5cUzHwqqlDv1ZO0QyAw==
+  dependencies:
+    nprogress "^0.2.0"
+
 gridsome@^0.7.0:
   version "0.7.19"
   resolved "https://registry.yarnpkg.com/gridsome/-/gridsome-0.7.19.tgz#3d67fb66c80b53101c750e870b076b3694152ec9"
@@ -6372,6 +6379,11 @@ npmlog@^4.0.1, npmlog@^4.1.2:
     console-control-strings "~1.1.0"
     gauge "~2.7.3"
     set-blocking "~2.0.0"
+
+nprogress@^0.2.0:
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/nprogress/-/nprogress-0.2.0.tgz#cb8f34c53213d895723fcbab907e9422adbcafb1"
+  integrity sha1-y480xTIT2JVyP8urkH6UIq28r7E=
 
 nth-check@^1.0.2, nth-check@~1.0.1:
   version "1.0.2"

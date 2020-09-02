@@ -48,6 +48,15 @@ module.exports = {
         pathPrefix: '/blog', // Add route prefix. Optional
         template: './src/templates/Post.vue' // Optional
       }
+    },
+    {
+      use: 'gridsome-plugin-nprogress',
+      options: {
+        // Setting a color is optional.
+        color: '#58B2DC',
+        // Disable the loading spinner.
+        showSpinner: false,
+      }
     }
   ],
   css: {
