@@ -12,7 +12,7 @@ module.exports = {
     },
     extend: {
       colors: {
-        'sora': '#66ccff',
+        'sora': '#58B2DC',
       },
       gridTemplateRows: {
         'layout': '60px minmax(300px, 1fr) 120px',
@@ -43,8 +43,8 @@ module.exports = {
         padding: '0.25rem 1rem 0.25rem 1rem',
         color: 'white',
         '&:hover': {
-          borderColor: '#66ccff',
-          color: '#66ccff',
+          borderColor: '#58B2DC',
+          color: '#58B2DC',
           cursor: 'pointer'
         }
       },
