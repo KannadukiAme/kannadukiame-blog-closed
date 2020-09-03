@@ -1,19 +1,14 @@
 <template>
   <Layout class="layout grid grid-rows-layout">
-    <Articles :list="$page.post.edges"/>
+    <Articles :list="$page.post.edges" />
   </Layout>
 </template>
 
 <page-query>
-query Post($page:Int) {
-  post: allPost(perPage: 6, page: $page, order: DESC, sortBy: "created_at") @paginate  {
-    totalCount
-    pageInfo {
-      totalPages
-      currentPage
-    }
-    edges {
-      node {
+query ContainTag($title: String) {
+	post: allPost(filter:{tags:{contains:[$title]}}) {
+    edges{
+      node{
         title,
         path,
         date,
@@ -30,7 +25,7 @@ import Articles from "../components/Articles";
 
 export default {
   metaInfo: {
-    title: "Blog",
+    title: "Tag",
   },
   components: {
     Articles,

@@ -1,41 +1,31 @@
 <template>
   <div class="container mx-auto px-4 py-12">
-    <div class="mb-5" v-for="(item, index) in $static.post.edges" :key="index">
+    <div class="mb-5" v-for="(item, index) in list" :key="index">
       <div class="text-5xl font-bold">
         <g-link class="hover:text-sora" :to="item.node.path">{{item.node.title}}</g-link>
       </div>
       <div class="text-base text-gray-500 mb-2">发表于 {{item.node.date}}</div>
       <div class="flex text-base space-x-2 mb-5">
-        <a class="tag" v-for="(tag, index) in item.node.tags" :key="index" href="#">{{tag}}</a>
+        <g-link
+          class="tag"
+          v-for="(tag, index) in item.node.tags"
+          :key="index"
+          :to="`/tags/${tag}`"
+        >{{tag}}</g-link>
       </div>
       <div>{{item.node.description}}</div>
     </div>
   </div>
 </template>
 
-<static-query>
-query Post($page:Int) {
-  post: allPost(perPage: 6, page: $page, order: DESC, sortBy: "created_at") @paginate  {
-    totalCount
-    pageInfo {
-      totalPages
-      currentPage
-    }
-    edges {
-      node {
-        title,
-        path,
-        date,
-        description,
-        tags
-      }
-    }
-  }
-}
-</static-query>
-
 <script>
 export default {
   name: "Articles",
+  props: {
+    list: Array,
+  },
+  mounted(){
+    console.log(this.list)
+  }
 };
 </script>
