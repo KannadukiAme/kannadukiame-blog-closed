@@ -11,6 +11,7 @@
     "dayjs": "^1.8.34",
     "gridsome": "^0.7.0",
     "gridsome-plugin-nprogress": "^0.0.7",
+    "remark-toc": "^7.0.0",
     "tailwindcss": "^1.7.2"
   },
   "devDependencies": {
