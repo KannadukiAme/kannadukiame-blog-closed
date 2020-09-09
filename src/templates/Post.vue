@@ -101,7 +101,9 @@ export default {
           this.activeAnchor = decodeURIComponent(window.location.hash);
         }
         // Clear the current observer.
-        this.observer.disconnect();
+        if (this.observe) {
+          this.observer.disconnect();
+        }
         // And create another one for the next page.
         this.$nextTick(this.initObserver);
       });
