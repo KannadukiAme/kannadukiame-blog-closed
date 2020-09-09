@@ -47,11 +47,6 @@ module.exports = {
         baseDir: './blog', // Where .md files are located
         pathPrefix: '/blog', // Add route prefix. Optional
         template: './src/templates/Post.vue', // Optional
-        plugins: [
-          ['remark-toc', {
-            heading: '目录',
-          }]
-        ]
       }
     },
     {
