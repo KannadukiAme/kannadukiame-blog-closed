@@ -83,7 +83,6 @@ query Post($id: ID!) {
 </page-query>
 
 <script>
-import * as dayjs from "dayjs"
 import { format } from "date-fns"
 
 export default {
