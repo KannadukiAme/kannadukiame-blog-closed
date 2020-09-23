@@ -1,12 +1,12 @@
 <template>
   <Layout class="layout grid grid-rows-layout">
-    <Articles :list="$page.post.edges"/>
+    <Articles :list="$page.post.edges" />
   </Layout>
 </template>
 
 <page-query>
 query Post($page:Int) {
-  post: allPost(perPage: 6, page: $page, order: DESC, sortBy: "created_at") @paginate  {
+  post: allPost(perPage: 6, page: $page, order: DESC) @paginate  {
     totalCount
     pageInfo {
       totalPages
@@ -26,7 +26,7 @@ query Post($page:Int) {
 </page-query>
 
 <script>
-import Articles from "../components/Articles";
+import Articles from "../components/Articles"
 
 export default {
   metaInfo: {

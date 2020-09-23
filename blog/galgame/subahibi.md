@@ -1,6 +1,6 @@
 ---
 title: 「素晴らしき日々～不連続存在～」——完全攻略日记（一）（未完成 ver.）
-date: 2020-9-21
+date: 2020-09-21
 image_url: /img/subahibi/cover.jpg
 description: 电波系经典作品，集众多要素于一身，涉及文学、哲学、神学、数学、物理等超多领域的大作。
 tags:

@@ -21,7 +21,7 @@ query ContainTag($title: String) {
 </page-query>
 
 <script>
-import Articles from "../components/Articles";
+import Articles from "../components/Articles"
 
 export default {
   metaInfo: {

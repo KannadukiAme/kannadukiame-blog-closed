@@ -13,15 +13,17 @@
     <div class="space-x-5 text-3xl">
       <g-link
         :to="item.link"
-        v-for="(item) in $static.metadata.externalLink"
+        v-for="item in $static.metadata.externalLink"
         :key="item.icon"
         target="_blank"
       >
-        <i :class="[item.icon,'text-gray-900', 'hover:text-sora']"></i>
+        <i :class="[item.icon, 'text-gray-900', 'hover:text-sora']"></i>
       </g-link>
     </div>
-    <div class="text-gray-900 text-5xl">{{$static.metadata.me.name}}</div>
-    <div class="text-gray-900 text-base">{{$static.metadata.me.description}}</div>
+    <div class="text-gray-900 text-5xl">{{ $static.metadata.me.name }}</div>
+    <div class="text-gray-900 text-base">
+      {{ $static.metadata.me.description }}
+    </div>
   </div>
 </template>
 

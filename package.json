@@ -8,6 +8,7 @@
   },
   "dependencies": {
     "@gridsome/vue-remark": "^0.2.2",
+    "date-fns": "^2.16.1",
     "dayjs": "^1.8.34",
     "gridsome": "^0.7.0",
     "gridsome-plugin-nprogress": "^0.0.7",
