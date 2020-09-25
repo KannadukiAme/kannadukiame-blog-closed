@@ -61,6 +61,7 @@
         class="markdown-body w-full md:order-1 md:w-3/4"
       ></VueRemarkContent>
     </div>
+    <BackToTop />
   </Layout>
 </template>
 
@@ -84,8 +85,12 @@ query Post($id: ID!) {
 
 <script>
 import { format } from "date-fns"
+import BackToTop from "../components/BackToTop"
 
 export default {
+  components: {
+    BackToTop
+  },
   metaInfo() {
     return {
       title: this.post.title,

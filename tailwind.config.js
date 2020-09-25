@@ -9,6 +9,7 @@ module.exports = {
   theme: {
     inset: {
       '0': 0,
+      '4': '2rem',
       'head': '120px',
     },
     fontFamily: {
