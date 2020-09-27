@@ -21,6 +21,9 @@
       </div>
       <div>{{ item.node.description }}</div>
     </div>
+    <div class="flex justify-center">
+      <slot></slot>
+    </div>
   </div>
 </template>
 

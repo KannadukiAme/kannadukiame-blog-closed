@@ -1,12 +1,14 @@
 <template>
   <Layout class="layout grid grid-rows-layout">
-    <Articles :list="$page.post.edges" />
+    <Articles :list="$page.post.edges">
+      <Pager :info="$page.post.pageInfo" linkClass="tag mx-1" activeLinkClass="tag--active"/>
+    </Articles>
   </Layout>
 </template>
 
 <page-query>
 query Post($page:Int) {
-  post: allPost(perPage: 6, page: $page, order: DESC) @paginate  {
+  post: allPost(perPage: 10, page: $page, order: DESC) @paginate  {
     totalCount
     pageInfo {
       totalPages
@@ -27,6 +29,7 @@ query Post($page:Int) {
 
 <script>
 import Articles from "../components/Articles"
+import { Pager } from 'gridsome'
 
 export default {
   metaInfo: {
@@ -34,6 +37,7 @@ export default {
   },
   components: {
     Articles,
+    Pager
   },
 };
 </script>

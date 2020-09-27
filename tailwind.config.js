@@ -41,6 +41,13 @@ module.exports = {
           cursor: 'pointer'
         }
       },
+      '.tag--active':{
+        borderWidth: '1px',
+        padding: '0.25rem 1rem 0.25rem 1rem',
+        backgroundColor: '#1a202c',
+        borderColor: '#fff',
+        color: '#fff',
+      },
       '.tag--white': {
         // backgroundColor: '#fff',
         borderWidth: '1px',
