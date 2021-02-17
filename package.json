@@ -11,7 +11,8 @@
     "docs:build": "vitepress build docs",
     "docs:serve": "vitepress serve docs"
   },
-  "devDependencies": {
-    "vitepress": "^0.11.4"
+  "devDependencies": {},
+  "dependencies": {
+    "vitepress": "^0.12.2"
   }
 }
