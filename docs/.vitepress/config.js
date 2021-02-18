@@ -1,35 +1,27 @@
 module.exports = {
   title: '雨ノ空',
   description: '神無月雨のブログ',
+  head: [
+    ['script', { src: 'https://kit.fontawesome.com/0f5d15080e.js', crossorigin: 'anonymous' }],
+  ],
   themeConfig: {
-    repo: 'https://github.com/KannadukiAme/kannadukiame-blog',
-    repoLabel: 'GitHub',
     nav: [
-      { text: 'HOME', link: '/' },
-      { text: 'BLOG', link: '/anime/Misuzu_Kamio'}
+      { text: 'HOME', link: '/' }
     ],
-    sidebar: [
+    externalLink:[
       {
-        text: '美少女角色篇',
-        collapsable: false,
-        children: [
-          {
-            text:'神尾観鈴',link:'/anime/Misuzu_Kamio'
-          },
-          {
-            text:'石動乃絵',link:'/anime/Noe_Isurugi'
-          }
-        ]
+        icon: 'fab fa-github-alt', link: 'https://github.com/KannadukiAme'
       },
       {
-        text: '其他',
-        collapsable: false,
-        children: [
-          {
-            text:'2020年总结',link:'/others/2020'
-          }
-        ]
+        icon: 'fab fa-twitter', link: 'https://twitter.com/Kannaduki_Ame'
+      },
+      {
+        icon: 'fab fa-telegram-plane', link: 'https://t.me/KannadukiAme'
+      },
+      {
+        icon: 'far fa-envelope', link: 'mailto:misuzunagisa@gmail.com'
       }
-    ]
+    ],
+    footer: 'Copyright © 2021 KannadukiAme'
   }
 }
