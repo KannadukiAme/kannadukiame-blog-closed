@@ -6,7 +6,8 @@ module.exports = {
   ],
   themeConfig: {
     nav: [
-      { text: 'HOME', link: '/' }
+      { text: '首页', link: '/' },
+      { text: '关于', link: '/about' }
     ],
     externalLink:[
       {

@@ -1,6 +1,6 @@
 <template>
   <div class="w-full">
-    <div class="flex inset-x-0 container mx-auto justify-between z-10">
+    <div class="flex container mx-auto justify-between z-10">
       <div class="flex px-2 py-2 space-x-6">
         <div class="text-gray-900 text-3xl font-bold">
           {{ title }}
