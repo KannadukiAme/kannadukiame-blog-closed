@@ -2,7 +2,7 @@
   <div class="container mx-auto mt-8">
     <div class="h-80 flex bg-white mb-4 shadow-lg" v-for="(post, key) in posts" :key="key">
       <div class="w-1/3">
-        <img class="h-full object-cover" :src="post.image_url" alt="" srcset="">
+        <img class="h-full object-cover" :src="post.image_url">
       </div>
       <div class="w-2/3 px-8 py-8">
         <div class="mb-3"><a class="text-2xl hover:text-sora" :href="post.link">{{ post.title }}</a></div>
