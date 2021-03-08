@@ -24,7 +24,7 @@ module.exports = {
     },
     extend: {
       colors: {
-        'sora': '#58B2DC',
+        'sora': '#58B2DC'
       }
     },
   },

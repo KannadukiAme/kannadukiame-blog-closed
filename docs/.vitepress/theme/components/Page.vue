@@ -5,13 +5,13 @@
       :style="{ backgroundImage: imageUrl }"
     >
       <div class="flex flex-col container mx-auto self-center">
-        <div class="text-4xl text-white font-bold text-center">
+        <div class="text-2xl md:text-4xl text-white font-bold text-center">
           {{ title }}
         </div>
-        <div class="text-base text-white text-right font-bold mt-8">
+        <div class="text-base md:text-xl text-white font-bold text-right mt-12">
           {{ date }}
         </div>
-        <div class="text-white text-lg md:text-xl mt-12">
+        <div class="text-lg md:text-2xl text-white font-bold mt-8">
           {{ description }}
         </div>
       </div>
@@ -33,7 +33,6 @@ const title = computed(() => frontMatter.value.title)
 const date = computed(() => format(new Date(frontMatter.value.date), "yyyy-M-d"))
 const imageUrl = computed(() => `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('${frontMatter.value.image_url}')`)
 const description = computed(() => frontMatter.value.description)
-
 </script>
 
 <style>
