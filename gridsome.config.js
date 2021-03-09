@@ -18,11 +18,11 @@ module.exports = {
     me: {
       avatar: '/homura-avatar.jpg',
       name: '神無月雨',
-      description: 'ダメオタクです、よろしく'
+      description: 'ただの魔法使い、二次元大好きな生き物'
     },
     nav: [
       { text: 'HOME', link: '/' },
-      { text: 'BLOG', link: '/blog/' }
+      { text: 'ABOUT', link: '/about/' }
     ],
     externalLink: [
       {

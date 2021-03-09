@@ -21,7 +21,7 @@
       </g-link>
     </div>
     <div class="mb-2 text-gray-900 text-5xl">{{ $static.metadata.me.name }}</div>
-    <div class="text-gray-900 text-xl">
+    <div class="text-gray-900 text-xl font-jp">
       {{ $static.metadata.me.description }}
     </div>
   </div>
@@ -50,6 +50,6 @@ query {
 
 <script>
 export default {
-  name: "Home",
+  name: "Me",
 };
 </script>

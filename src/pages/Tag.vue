@@ -1,7 +1,11 @@
 <template>
-  <Layout class="layout grid grid-rows-layout">
-    <Articles :list="$page.post.edges" />
-  </Layout>
+  <div>
+    <Header />
+    <Banner />
+    <Articles :posts="$page.post.edges" />
+    <Footer />
+  </div>
+
 </template>
 
 <page-query>
@@ -12,6 +16,7 @@ query ContainTag($title: String) {
         title,
         path,
         date,
+        image_url,
         description,
         tags
       }
@@ -21,14 +26,20 @@ query ContainTag($title: String) {
 </page-query>
 
 <script>
+import Header from "../components/Header"
+import Banner from "../components/Banner"
 import Articles from "../components/Articles"
+import Footer from "../components/Footer"
 
 export default {
   metaInfo: {
-    title: "Tag",
+    title: "标签",
   },
   components: {
+    Header,
+    Banner,
     Articles,
+    Footer
   },
 };
 </script>

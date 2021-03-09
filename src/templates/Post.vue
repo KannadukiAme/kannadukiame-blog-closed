@@ -1,5 +1,6 @@
 <template>
-  <Layout class="layout grid grid-rows-post-layout">
+  <div class="layout grid grid-rows-post-layout">
+    <Header />
     <div
       class="flex bg-no-repeat bg-cover px-4"
       :style="{ 'background-image': imageUrl }"
@@ -21,7 +22,7 @@
             {{ item }}
           </g-link>
         </div>
-        <div class="text-white text-lg md:text-xl mt-12">
+        <div class="text-white text-xl md:text-2xl font-bold mt-12">
           {{ post.description }}
         </div>
       </div>
@@ -62,7 +63,8 @@
       ></VueRemarkContent>
     </div>
     <BackToTop />
-  </Layout>
+    <Footer />
+  </div>
 </template>
 
 <page-query>
@@ -85,10 +87,15 @@ query Post($id: ID!) {
 
 <script>
 import { format } from "date-fns"
+
+import Header from "../components/Header"
+import Footer from "../components/Footer"
 import BackToTop from "../components/BackToTop"
 
 export default {
   components: {
+    Header,
+    Footer,
     BackToTop
   },
   metaInfo() {
@@ -115,7 +122,7 @@ export default {
   },
   filters: {
     formatDate: function (date) {
-      return format(new Date(date), "yyyy 年 M月 d日")
+      return format(new Date(date), "yyyy-MM-dd")
     }
   },
   watch: {

@@ -13,15 +13,15 @@ module.exports = {
       'head': '120px',
     },
     fontFamily: {
-      'sans': 'Helvetica, Tahoma, Arial, STXihei, "华文细黑", "Microsoft YaHei", "微软雅黑", SimSun, "宋体", Heiti, "黑体", sans- serif'
+      'sans': 'Helvetica, Tahoma, Arial, STXihei, "华文细黑", "Microsoft YaHei", "微软雅黑", SimSun, "宋体", Heiti, "黑体", sans- serif',
+      'jp': 'Yu Gothic UI'
     },
     extend: {
       colors: {
         'sora': '#58B2DC',
       },
       gridTemplateRows: {
-        'layout': '60px minmax(300px, 1fr) 120px',
-        'post-layout': '60px minmax(340px, calc(100vh - 100px)) minmax(300px, 1fr) 120px'
+        'post-layout': '52px minmax(340px, calc(100vh - 100px)) minmax(300px, 1fr) 120px'
       },
     },
   },
