@@ -7,13 +7,15 @@
     "explore": "gridsome explore"
   },
   "dependencies": {
-    "@gridsome/vue-remark": "^0.2.2",
-    "date-fns": "^2.16.1",
-    "gridsome": "^0.7.0",
-    "gridsome-plugin-nprogress": "^0.0.7",
-    "tailwindcss": "^1.7.2"
+    "@gridsome/vue-remark": "^0.2.6",
+    "date-fns": "^2.19.0",
+    "gridsome": "^0.7.23",
+    "gridsome-plugin-nprogress": "^0.0.7"
   },
   "devDependencies": {
-    "@fullhuman/postcss-purgecss": "^2.3.0"
+    "@fullhuman/postcss-purgecss": "2.3.0",
+    "autoprefixer": "^10.2.5",
+    "postcss": "^8.2.7",
+    "tailwindcss": "^2.0.3"
   }
 }
