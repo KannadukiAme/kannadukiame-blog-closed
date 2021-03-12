@@ -13,7 +13,7 @@ const postcssPlugins = [
 if (process.env.NODE_ENV === 'production') postcssPlugins.push(purgecss(require('./purgecss.config.js')))
 
 module.exports = {
-  siteName: '雨ノ空',
+  siteName: 'KannadukiAme\'s Blog',
   metadata: {
     me: {
       avatar: '/homura-avatar.jpg',
