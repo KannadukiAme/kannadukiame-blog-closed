@@ -7,3 +7,7 @@ KannadukiAme's Blog
 神無月雨のブログ
 
 神無月雨的博客
+
+## Note
+
+自 2023 年 1 月 23 日起永久关闭该仓库，新的仓库已迁移至[这里](https://github.com/KannadukiAme/kannadukiame-blog)
